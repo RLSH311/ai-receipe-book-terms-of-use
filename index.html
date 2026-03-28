@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Terms of Use</title>
-  <meta name="description" content="Terms of Use for the recipe saving application.">
+  <title>AI Recipe Book — Terms of Use</title>
+  <meta name="description" content="Terms of Use for AI Recipe Book.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -50,16 +50,9 @@
       font-size: 0.875rem;
       color: var(--muted);
     }
-    .notice {
-      font-family: "IBM Plex Sans", system-ui, sans-serif;
-      font-size: 0.8125rem;
-      line-height: 1.5;
-      color: var(--muted);
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 1rem 1.125rem;
-      margin-bottom: 2rem;
+    .intro {
+      margin: 0 0 2rem;
+      font-size: 1.0625rem;
     }
     nav.toc {
       font-family: "IBM Plex Sans", system-ui, sans-serif;
@@ -122,7 +115,7 @@
     .experimental p:last-child { margin-bottom: 0; }
     @media print {
       body { background: #fff; }
-      .notice, nav.toc, .experimental { break-inside: avoid; }
+      nav.toc, .experimental { break-inside: avoid; }
       a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.85em; }
     }
   </style>
@@ -134,8 +127,8 @@
       <p class="meta" id="effective-date">Effective date: March 28, 2026</p>
     </header>
 
-    <p class="notice">
-      These Terms of Use (“<strong>Terms</strong>”) govern your use of <strong id="app-name">AI Recipe Book</strong> (the “<strong>Application</strong>”), operated by <strong id="operator-name">AI Recipe Book Company</strong> (“<strong>we</strong>,” “<strong>us</strong>,” or “<strong>our</strong>”). Replace the bracketed placeholders in this document with your real app name, legal entity, governing law, and contact details before publishing. Google Play also requires a separate <strong>Privacy Policy</strong> URL—host it alongside this page or elsewhere and link it in Play Console. This page is provided for convenience and does not replace advice from a qualified attorney.
+    <p class="intro">
+      These Terms of Use (“<strong>Terms</strong>”) govern your use of <strong id="app-name">AI Recipe Book</strong> (the “<strong>Application</strong>”), operated by <strong id="operator-name">AI Recipe Book Company</strong> (“<strong>we</strong>,” “<strong>us</strong>,” or “<strong>our</strong>”).
     </p>
 
     <nav class="toc" aria-label="Table of contents">
@@ -238,7 +231,7 @@
 
     <h2 id="contact">17. Contact</h2>
     <p>For questions about these Terms, or to send copyright or removal requests, contact us at:</p>
-    <p><strong id="contact-email">spicesintheair@gmail.com</strong></p>
+    <p><strong id="contact-email"><a href="mailto:spicesintheair@gmail.com">spicesintheair@gmail.com</a></strong></p>
 
     <footer>
       <p>© <span id="year">2026</span> <span class="operator-repeat">AI Recipe Book Company</span>. All rights reserved.</p>
@@ -251,7 +244,7 @@
       if (y) y.textContent = String(new Date().getFullYear());
       var op = document.getElementById("operator-name");
       var repeat = document.querySelector(".operator-repeat");
-      // Mirror operator name from the notice into the footer © line.
+      // Mirror operator name from the intro into the footer © line.
       if (op && repeat && op.textContent.trim()) {
         repeat.textContent = op.textContent.trim();
       }
