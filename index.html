@@ -118,17 +118,28 @@
       nav.toc, .experimental { break-inside: avoid; }
       a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.85em; }
     }
+    .site-nav {
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      font-size: 0.875rem;
+      margin-bottom: 1.5rem;
+    }
+    .site-nav a { margin-right: 1rem; }
   </style>
 </head>
 <body>
   <div class="wrap">
+    <nav class="site-nav" aria-label="Legal documents">
+      <a href="index.html" aria-current="page">Terms of Use</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </nav>
+
     <header>
       <h1>Terms of Use</h1>
       <p class="meta" id="effective-date">Effective date: March 28, 2026</p>
     </header>
 
     <p class="intro">
-      These Terms of Use (“<strong>Terms</strong>”) govern your use of <strong id="app-name">AI Recipe Book</strong> (the “<strong>Application</strong>”), operated by <strong id="operator-name">AI Recipe Book Company</strong> (“<strong>we</strong>,” “<strong>us</strong>,” or “<strong>our</strong>”).
+      These Terms of Use (“<strong>Terms</strong>”) govern your use of <strong id="app-name">AI Recipe Book</strong> (the “<strong>Application</strong>”), operated by <strong id="operator-name">AI Recipe Book Company</strong> (“<strong>we</strong>,” “<strong>us</strong>,” or “<strong>our</strong>”). Our <a href="privacy-policy.html">Privacy Policy</a> explains how we handle personal information.
     </p>
 
     <nav class="toc" aria-label="Table of contents">
@@ -155,7 +166,7 @@
     </nav>
 
     <h2 id="acceptance">1. Acceptance of these Terms</h2>
-    <p>By downloading, accessing, or using the Application, you agree to be bound by these Terms and our Privacy Policy. If you do not agree, do not use the Application. If you use the Application on behalf of an organization, you represent that you have authority to bind that organization.</p>
+    <p>By downloading, accessing, or using the Application, you agree to be bound by these Terms and our <a href="privacy-policy.html">Privacy Policy</a>. If you do not agree, do not use the Application. If you use the Application on behalf of an organization, you represent that you have authority to bind that organization.</p>
 
     <h2 id="experimental">2. Experimental nature of the Application</h2>
     <div class="experimental" role="region" aria-label="Experimental service notice">
@@ -234,7 +245,7 @@
     <p><strong id="contact-email"><a href="mailto:spicesintheair@gmail.com">spicesintheair@gmail.com</a></strong></p>
 
     <footer>
-      <p>© <span id="year">2026</span> <span class="operator-repeat">AI Recipe Book Company</span>. All rights reserved.</p>
+      <p>© <span id="year">2026</span> <span class="operator-repeat">AI Recipe Book Company</span>. All rights reserved. <a href="privacy-policy.html">Privacy Policy</a></p>
     </footer>
   </div>
 
